@@ -1,0 +1,184 @@
+body{
+    background: #18191a;
+    font-family: 'Palanquin', sans-serif;
+}
+
+/* menu css  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #242526;
+    border-bottom: 1px solid gray;
+    position: fixed !important;
+    z-index: 10000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo input{
+    background: #3a3b3c ;
+    border: none;
+    border-radius: 30px;
+    margin-left: 5px;
+    height: 37px;
+    padding: 19px;
+}
+.logo input:focus{
+    background-color: aliceblue !important;
+    border: none;
+}
+.logo i{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.offcanvas-body {
+    background:#222324 !important;
+}
+.offcanvas-header {
+    background: #222324;
+}
+.cloase-button {
+    background: #222324 !important;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+
+.fiext-side-left{
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    margin-top: 55px;
+}
+.fiext-side-left h6{
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #616363;
+    border-radius: 30px;
+    height: 50px !important;
+}
+.fiext-side-right{
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    overflow-y: scroll;
+    margin-top: 50px;
+}
+.accordion-button{
+    background-color: #18191a;
+    color: white;
+}
+.accordion-button:focus{
+    background-color: #18191a;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.accordion-button::after{
+    content: '';
+    display: none;
+}
+.accordion-body{
+    background-color: #18191a;
+    color: white;
+}
+
+
+
+.main-area {
+    padding: 20px 11%;
+    margin-top: 56px !important;
+}
+.storis-persone {
+    bottom: 2%;
+    left: 6%;
+}
+.story-img {
+    top: 8%;
+    left: 0%;
+}
+.post-input {
+    width: 74%;
+    background: #3a3b3c;
+    border: none;
+    height: 34px;
+    border-radius: 22px;
+    padding: 0px 28px;
+}
+.post-input:focus{
+    outline: none !important;
+}
+
+
+
+
+.pointer{
+    cursor: pointer;
+}
+.hover-effect:hover{
+    background: #303031;
+    transition: all .2s ease-in-out;
+}
+.hover-effect-2:hover{
+    background: #3a3b3c;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+
+
+
+/*  ===============================================
+            responsive css 
+================================================ */
+
+@media all and (max-width:1500px){
+    .fiext-side-left {
+        display: none;
+    }
+    .fiext-side-right {
+        display: none;
+    }
+    .main-area {
+        padding: 20px 0%;
+    }
+    .left-side-menu{
+        display: none !important;
+    }
+    .right-side-menu{
+        display: none !important;
+    }
+    nav{
+        justify-content: center;
+    }
+    .middle-menu{
+        width: 100% !important;
+        text-align: center;
+        margin: auto;
+    }
+    
+}
+@media all and (max-width:500px){
+    .-margin{
+        margin: 0% 29px !important;
+    }
+    .menu{
+        width: 100%;
+    }
+    .middle-menu{
+        width: 100% !important;
+    }
+    
+}
